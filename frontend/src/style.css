@@ -1,0 +1,137 @@
+:root {
+  --bg: #05060d;
+  --bg-2: #0a0d1a;
+  --pink: #ff9ec4;
+  --pink-soft: rgba(255, 158, 196, 0.55);
+  --cyan: #7fe3f2;
+  --ink: #e9eef7;
+  --muted: rgba(233, 238, 247, 0.42);
+  --faint: rgba(233, 238, 247, 0.16);
+  --line: rgba(255, 255, 255, 0.08);
+  --glass: rgba(12, 16, 28, 0.72);
+  --font: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI",
+    -apple-system, "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  cursor: default;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--pink-soft);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(233, 238, 247, 0.22);
+}
+
+textarea {
+  resize: none;
+  line-height: 1.8;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  padding: 9px 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--line);
+  color: rgba(233, 238, 247, 0.8);
+  transition: all 0.22s ease;
+}
+
+.btn:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.btn.primary {
+  background: linear-gradient(120deg, rgba(255, 158, 196, 0.92), rgba(255, 190, 220, 0.78));
+  border-color: transparent;
+  color: #2a0e19;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 22px rgba(255, 158, 196, 0.4);
+  filter: brightness(1.06);
+}
+
+.btn.danger:hover {
+  border-color: rgba(255, 110, 130, 0.55);
+  color: #ff8b9b;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

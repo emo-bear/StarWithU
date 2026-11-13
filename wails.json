@@ -1,0 +1,20 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "StarWithU",
+  "outputfilename": "StarWithU",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "luochong",
+    "email": "luochong282@qq.com"
+  },
+  "info": {
+    "companyName": "StarWithU",
+    "productName": "Star With U",
+    "productVersion": "0.2.0",
+    "copyright": "Copyright © 2026 Star With U",
+    "comments": "把我们的每一天，都挂到星星上"
+  }
+}
